@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19</title>
+    <link rel="stylesheet" href="covid19.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+</head>
+<body>
+
+    <div class="covid-container">
+        
+            <header>
+                <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" height="60px" width="" alt="AIT">
+            <nav>
+                <ul>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Corporate Training</a></li>
+                    <li><a href="#">Placements Page</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            </header>
+            
+        
+            <div class="register-link">
+                <h1>COVID-19 Vaccine Registration</h1>
+                <button id="reg1" class="btn0" onclick="popup()"><i class="fas fa-plus"></i>Register</button>
+                <!-- form data -->
+                 <div id="registor"  class="covid_form">
+                
+                       
+                        <form action="registor-form"  class="form_content animate" >
+                                <div class="head">
+                                    <h3>Register Covid-19 Vaccine <i class="fas fa-window-close" id="reg2" onclick="closeForm()"></i></i></h3>
+                                </div>
+                            <div class="table1">
+                                <label class="fname" for="fname">NAME</label><br>
+                                <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+                                <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required><br>
+                                <label for="contect-no">Contact Number</label><br>
+                                <input type="number" name="contect-no" id="contact-no" placeholder="Enter Contact Number" required>
+                            </div>
+                        
+                        
+                        <div class="table2">
+                        <label for="adhar-no">Aadhar no</label><br>
+                        <input type="text" name="adhar-no" id="adhar-no" placeholder="Enter 12 Digit Aadhar No" required><br>
+                        <label for="DOB">Date of Birth</label><br>
+                        <input type="date" name="DOB"  id="DOB" placeholder="date" required>
+                        </div>
+                    
+                        <div class="table3">
+                            <div class="gender">
+                                <label for="male">Gender</label><br>
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="others" value="others">
+                                <label for="others">Others</label>
+                            </div>
+                        
+                    
+                        <div class="covid">
+                            <label for="">Have you been diagnised with covid-19 ?</label><br>
+                            <input type="radio" name="covid" id="yes">
+                            <label for="yes">Yes</label>    
+                            <input type="radio" name="covid" id="no">
+                            <label for="no">No</label>
+                        </div>
+                        
+                        </div>
+                        
+                    
+                        <div class="table4">
+                        <label for="loss of taste/smell">Please Check all symptoms that apply ?</label><br>
+                        <input type="checkbox" name="loss of taste/smell" id="loss of taste/smell" value="test-details">
+                        <label>Loss Of Taste/Small</label>
+                        <input type="checkbox" name="difficulty Breathing" id="difficulty Breathing" value="test-details">
+                        <label for="difficulty Breathing">Difficulty Breathing</label>
+                        <input type="checkbox" name="cough" id="cough" value="test-details">
+                        <label for="cough">Cough</label>
+                        <input type="checkbox" id="running Nose" name="running Nose" value="test-details">
+                        <label for="running Nose">Running Nose</label>
+                        <input type="checkbox" id="body Pains" name="body Pains" value="test-details">
+                        <label for="body Pains">Body Pains</label>
+                        <input type="checkbox" id="headache" name="headache" value="test-details">
+                        <label for="headache">headache</label>
+                        <input type="checkbox" id="sore Throat" name="sore Throat" value="test-details">
+                        <label for="">Sore Throat</label>
+                        <input type="checkbox" id="fever" name="fever" value="test-details">
+                        <label for="fever">Fever</label>
+                        </div>
+                        
+                         <div class="address">
+                            <div class="table5">
+                                <label for="addres">Addres</label><br>
+                                <input type="text" name="street-address" id="street address" placeholder="Street address" required>
+                                <input type="text" name="landmark" id="landmark" placeholder="Landmark" required><br>
+                                <input type="text" name="pincode" id="pincode" placeholder="Pincod" required>
+                                <input type="text" name="state" id="state" placeholder="State" required>
+                            </div>
+                                
+                            <div class="table6">
+                                <input type="checkbox" name="check-me-out" id="check-me-out">
+                            <label for="check-me-out">Check me out</label><br>
+                            <button class="btn1">Submite</button>
+                            <button class="btn2">Reset</button>
+                            </div>
+                            </div>
+                     
+            </form> 
+        </div>              
+    
+                    
+                 
+
+                <!-- form data -->
+                
+            </div>
+            <div class="personal-details">
+                <nav>
+                    <li><a href="#">FName</a></li>
+                    <li><a href="#">LName</a></li>
+                    <li><a href="#">Adhar</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">DOB</a></li>
+                    <li><a href="#">Gender</a></li>
+                    <li><a href="#">c_history</a></li>
+                    <li><a href="#">Symptoms</a></li>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Landmark</a></li>
+                    <li><a href="#">pincode</a></li>
+                    <li><a href="#">State</a></li>
+                    </nav>
+            </div>
+
+            
+
+            <footer>
+                <div>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="phone">
+                    <i class="fas fa-phone-volume"></i>
+                    <p>call us on: +91-8431-040-457</p>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <p>Request A Call Back</p>
+                </div>
+            </footer>
+        </div>
+  <script src="covid19.js">
+  
+
+  </script>
+    
+</body>
+</html>
