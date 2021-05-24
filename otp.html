@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+</head>
+<body>
+    <button type="button" onclick="generateOTP()">Generate OTP</button>
+   <p id="generate">Generate OTP</p>
+
+    <script>
+
+
+    
+    function generateOTP() {
+          
+          // Declare a string variable 
+          // which stores all string
+          var string = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          let OTP = '';
+            
+          // Find the length of string
+           var len = string.length;
+          for (let i = 0; i < 5; i++ ) {
+              OTP += string[Math.floor(Math.random() * len)];
+          }
+        console.log("OTP of 5 length: ");
+        console.log( OTP );
+        document.getElementById('generate').innerHTML =  'Generated OTP : ' + OTP +'';
+     }
+      
+  const array = [12,45,67,89];
+  array[100] = [99];
+  console.log(array.length);
+
+    
+
+
+
+    </script>
+</body>
+</html>
